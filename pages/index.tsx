@@ -3,7 +3,7 @@ import {useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCards, Thumbs, EffectCreative } from "swiper/modules";
 import "swiper/css";
-
+import Link from "next/link";
 
 export default function Home() {
   const [totalNum, setTotalNum] = useState([
@@ -52,9 +52,11 @@ export default function Home() {
             the first modular party game in Metaverse.
           </p>
           <p className="py-6">
+          <Link href="/create">
             <button className="bg-[#5E68E5] py-3 px-6 rounded-lg cursor-pointer drop-shadow hover:bg-[#5E68E5]">
               Binding relationship
             </button>
+            </Link>
           </p>
         </div>
         <div className="bg-[#5d44c5] flex flex-col">
