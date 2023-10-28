@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "script": "next start",
+      "script":  "node ./server/app",
       "name": "PingMe",
       "log_date_format": "YYYY-DD-MM HH:mm",
       "env": {
