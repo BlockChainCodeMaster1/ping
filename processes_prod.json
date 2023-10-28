@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "script": "next start",
+      "name": "PingMe",
+      "log_date_format": "YYYY-DD-MM HH:mm",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "watch": [
+        "./server"
+      ],
+      "ignore_watch": [
+        "node_modules"
+      ]
+    }
+  ]
+}

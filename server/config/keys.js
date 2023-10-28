@@ -1,0 +1,29 @@
+// ADD YOUR OWN KEYS AND RENAME THIS FILE TO keys.js
+const TWITTER_TOKENS = {
+  TWITTER_CONSUMER_KEY: "PB0hIJk21GrGCj2lsX4Uipes8",
+  TWITTER_CONSUMER_SECRET: "corAnqEsYA3H8hypyuCrsDSdlIaVaYFrIVxyRZWmFiGJgEjv6D",
+  TWITTER_ACCESS_TOKEN: "1601962137361842176-kRAjK219MXqigYoEmNJkwVy0cLby7O",
+  TWITTER_TOKEN_SECRET: "9355GwvIQqqNXQ1f1jKtE19ymTpPSAVN5CkWYR2ZxOeSi",
+  CLIENT_KEY: "OS1tMWY3aUo0dE9ISEFNSnpOMVg6MTpjaQ",
+  CLIENT_KEY_SECRET:"8QRA5LiFPMtq4gRU19ouJoRwCfWCPnuLUKxM_0EP9yQYbuwO8R"
+};
+
+const DB_USER = "aemoe14";
+const DB_PASSWORD = "bls6HtjnfONYK4bR";
+const MONGODB = {
+  
+  // MONGODB_URI: `mongodb+srv://${DB_USER}:${DB_PASSWORD}@novaui.6ege3rk.mongodb.net/?retryWrites=true&w=majority`
+  MONGODB_URI: `mongodb://${DB_USER}:${DB_PASSWORD}@54.179.203.24:27017/admin`
+};
+
+const SESSION = {
+  COOKIE_KEY: "thisappisawesome"
+};
+
+const KEYS = {
+  ...TWITTER_TOKENS,
+  ...MONGODB,
+  ...SESSION
+};
+
+module.exports = KEYS;
