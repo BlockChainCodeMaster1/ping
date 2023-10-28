@@ -12,7 +12,7 @@ import keys from './config/keys'
 import authRoutes from './router/auth-routes'
 
 
-const port = parseInt(process.env.PORT, 10) || 8080
+const port = parseInt(process.env.PORT, 10) || 8199
 const env = process.env.NODE_ENV
 const dev = env !== 'production'
 const app = next({
@@ -90,7 +90,7 @@ app
           }
           console.log(`
         > Ready on port ${port} [${env}]
-        http://localhost:8080
+        http://localhost:8199
       `)
       })
   })
