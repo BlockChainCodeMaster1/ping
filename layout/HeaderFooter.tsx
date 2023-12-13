@@ -10,7 +10,7 @@ const HeaderFooter = (props:any) => {
 
   return (
     <div>
-       <header className=" bg-indigo-800  px-4 py-6 font-[GT-America-Bold] relative z-50 ">
+       <header className="px-4 py-6 font-[GT-America-Bold] relative z-50 ">
           <div className=' w-full sm:w-10/12 mx-auto flex items-center justify-between'>
             <Header/>
             <Web3Button />

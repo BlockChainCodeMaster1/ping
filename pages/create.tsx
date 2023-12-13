@@ -104,8 +104,7 @@ export default function Home() {
     "getPublicHash",
     publicHashMsg,
     isError,
-    isLoading,
-    getPublicHash
+    isLoading
   );
 
   const getPublicInviteCode = async () => {
@@ -143,6 +142,7 @@ export default function Home() {
     const { index } = await getAndUpdateIndex();
     console.log("index", index);
     setPrivateIndex(index);
+    console.log("setPrivateIndex", index)
     getPrivateHash();
 
     console.log("getPrivateHash");
@@ -200,10 +200,10 @@ export default function Home() {
           </div>
         </div>
         <div className="py-10">
-          <div className=" bg-white bg-opacity-10 w-6/12 mx-auto rounded-full text-white text-xs">
+          <div className=" bg-white bg-opacity-10 w-[38rem] mx-auto rounded-full text-white text-xs">
             <div
               className={
-                "bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500 rounded-full p-4 text-center " +
+                "bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500 rounded-full p-4 text-center transition-all " +
                 (step == 0 ? "w-3/12" : "") +
                 (step == 1 ? "w-6/12" : "") +
                 (step == 2 ? "w-9/12" : "") +
@@ -273,7 +273,7 @@ export default function Home() {
           )}
 
           {step == 2 && (
-            <div className=" h-96 flex flex-col items-center justify-center text-white">
+            <div className=" h-[22rem] flex flex-col items-center justify-center text-white">
               <h1 className=" py-4">点击下方按钮签名钱包</h1>
               <button
                 onClick={async () => {
@@ -292,7 +292,7 @@ export default function Home() {
           )}
 
           {step == 3 && (
-            <div className=" h-96 flex flex-col items-center justify-center text-white">
+            <div className=" h-[22rem] flex flex-col items-center justify-center text-white">
               <h1 className=" py-4 text-4xl mt-32">🎉 恭喜您 🎉</h1>
               <h2 className="py-4">
                 已为您创建好邀请链接，发送给对方绑定关系。

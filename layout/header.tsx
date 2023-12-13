@@ -6,12 +6,12 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const [nav, setNav] = useState([
     {
-      name: "RELATIONSHIP",
+      name: "Home",
       href: "/",
     },
     {
       name: "INTEGRAL",
-      href: "/",
+      href: "/#data",
     },
   ]);
 
@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <>
-      <img src="/logo.png" className="w-20 h-6" alt="logo" />
+      <img src="/logo.png" className="w-9 h-10" alt="logo" />
       {isMobile && (
         <div
           className=" bg-[#02000b] bg-opacity-30  fixed left-0 right-0 top-0 bottom-0 z-40"
@@ -40,7 +40,7 @@ export default function Header() {
           }}
         ></div>
       )}
-      {showNav && (
+      {/* {showNav && (
         <ul
           className=" justify-start sm:justify-center gap-4 text-basic bg-[#02000b] bg-opacity-30 sm:bg-transparent bottom-0 z-50 
       sm:bg-opacity-100 text-white flex fixed right-0 top-0 sm:relative w-40 sm:w-auto flex-col sm:flex-row backdrop-blur-sm 
@@ -54,7 +54,7 @@ export default function Header() {
             </Link>
           ))}
         </ul>
-      )}
+      )} */}
     </>
   );
 }
